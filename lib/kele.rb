@@ -17,8 +17,6 @@ class Kele
     ### Retrieve the current user from the Bloc API and converting into a ruby hash
 
     response = self.class.get('/users/me', headers: { "authorization" => @auth_token })
-    document = JSON[response]
-    document = JSON.parse(document)
-    document = JSON.parse(document)
+    body = JSON.parse(response.body)
   end
 end
