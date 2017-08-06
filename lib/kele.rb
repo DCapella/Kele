@@ -1,8 +1,10 @@
 require 'httparty'
 require 'json'
-require './lib/roadmap'
+require './lib/kele_accessories/roadmap'
+require './lib/kele_accessories/message'
 
 include Roadmaps
+include Messages
 
 
 class Kele
